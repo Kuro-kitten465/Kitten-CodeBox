@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF;
+}
+
+/* Main Content Styles */
+.content {
+    width: 80%;
+    padding: 0 20px;
+}
+
+.content section {
+    margin-bottom: 40px;
+}
+
+pre {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Sidebar and other styles remain the same */
+
+/* Hide all sections initially */
+.content section {
+    display: none;
+}
+
+/* Show only the active section */
+.content section.active {
+    display: block;
+}
