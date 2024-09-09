@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contentContainer = document.querySelector(".content");
 
     // Fetch the JSON file
-    fetch('test.json')
+    fetch("https://kuro-kitten465.github.io/Kitten-CodeBox/data/c-sharp.json")
         .then(response => response.json())
         .then(data => {
             // Function to display the selected topic with multiple descriptions and code blocks
